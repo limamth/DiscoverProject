@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(assets/bg-desktop.jpg);
+}
+
+body * {
+    font-family: 'Ruwudu', serif;
+    color: white;
+}
+
+#container {
+    width: 100%;
+    max-width: 588px;
+    margin: 56px auto 0px;
+    padding: 0 24px;
+}
+
+#avatar {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 24px;
+}
+
+#avatar img {
+    width: 112px;
+    height: 111px;
+
+}
+
+#avatar p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 8px;    
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ul li a { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+ul li a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid white
+}
+
+#assets {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    padding: 24px ;
+    font-size: 30px;
+    justify-content: center;
+}
+
+/* precisei estilizar o elemento somente pelo hover. Foi necessario adicionar padding para ao passar o mouse não cortar o icone*/
+#assets a {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+#assets a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
